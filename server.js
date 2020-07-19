@@ -22,9 +22,10 @@ app.use(express.json());
 app.use(cors());
 
 app.get('/', (req, res) => {
-	db.select('*').from('users')
-	.then(database => res.json(database))
-	.catch(err => res.status(400).json('Cannot Access to Database'))
+	res.send('it is working!')
+	// db.select('*').from('users')
+	// .then(database => res.json(database))
+	// .catch(err => res.status(400).json('Cannot Access to Database'))
 })
 app.post('/signin', signin.handleSignin(db, bcrypt)) // IIFF
 app.post('/register', (req, res) => { register.handleRegister(req, res, db, bcrypt) })
