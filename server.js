@@ -5,9 +5,9 @@ const db = require('knex')({
   client: 'pg',
   version: '7.2',
   connection: {
-    host : '127.0.0.1',
-    user : 'postgres',
-    password : 'ap354455',
+    host : 'postgresql-animated-77750',
+    user : 'ueusubjbfvxkre',
+    password : 'd6a2d12c41c62dc8213a7f273f8b52608e20b92618637fe824c15535964ed82e',
     database : 'smart-brain'
   }
 });
